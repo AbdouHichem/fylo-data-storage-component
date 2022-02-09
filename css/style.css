@@ -224,6 +224,8 @@ main {
         -ms-flex-align: end;
             align-items: flex-end;
     gap: 1em;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .FirstSection {
     -webkit-box-flex: 1;

@@ -151,6 +151,7 @@ main {
     flex-direction: row;
     align-items: flex-end;
     gap: 1em;
+    transition: all 0.5s ease;
   }
   .FirstSection {
     flex: 1;
