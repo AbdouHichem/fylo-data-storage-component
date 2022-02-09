@@ -63,12 +63,13 @@ main {
   //align-items: center;
   flex-direction: column;
   p {
-    color: $GrayishBlue;
+    color: $PaleBlue;
     margin-bottom: 1em;
     text-align: center;
   }
   span {
     color: white;
+    font-weight: bold;
   }
   .bar {
     width: 100%;

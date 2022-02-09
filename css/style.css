@@ -108,13 +108,14 @@ main {
 }
 
 .SecondSection p {
-  color: #848794;
+  color: #dddbff;
   margin-bottom: 1em;
   text-align: center;
 }
 
 .SecondSection span {
   color: white;
+  font-weight: bold;
 }
 
 .SecondSection .bar {
