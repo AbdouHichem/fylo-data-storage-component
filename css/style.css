@@ -207,7 +207,7 @@ main {
           transform: translateY(1px);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 780px) {
   body {
     background-image: url(../images/bg-desktop.png);
     background-color: #0c122c;
