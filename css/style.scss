@@ -1,7 +1,131 @@
+@import "config";
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+  color: white;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 360px;
+  position: relative;
+  margin-bottom:3em;
+}
+
+.FirstSection,
+.SecondSection {
+  background-color: $DarkBlue;
+  padding: 2rem 1.5rem;
+  margin: 0.5em 0em;
+  width: 100%;
+  border-radius: 1em 1em 1em 1em;
+}
+.FirstSection {
+  border-radius: 1em 6em 1em 1em;
+}
+.icons {
+  display: flex;
+  gap: 1em;
+}
+.card {
+  margin-top: 2em;
+  border-radius: 0.4em;
+  padding: 0.6em;
+  background-color: $VeryDarkBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SecondSection {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  flex-direction: column;
+  p {
+    color: $GrayishBlue;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  span {
+    color: white;
+  }
+  .bar {
+    width: 100%;
+    height: 1.5em;
+    border-radius: 5em;
+    background-color: $VeryDarkBlue;
+  }
+  .remplissage {
+    width: 80%;
+    height: 1.5em;
+    border-radius: 5em;
+    border: 2px solid $VeryDarkBlue;
+    background: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .point {
+    margin-right: 0.2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 5em;
+    background-color: white;
+  }
+  .size{
+      display: flex;
+      margin: 1em 0em;
+      justify-content:space-between;
+      color:white;
+      font-size:.8em;
+  }
+}
+.FloatSection{
+    position: absolute;
+    background-color: white;
+    padding:1em;
+    border-radius: .5em;
+    font-size:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $GrayishBlue;
+    span{
+        color:$VeryDarkBlue;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .five{
+        transform: translateY(2px);
+    }
+    .one{
+        font-size:1.7em;
+        transform: translateY(1px);
+    }
+    top:330px;
 }

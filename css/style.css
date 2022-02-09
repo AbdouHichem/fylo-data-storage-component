@@ -1,9 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+  color: white;
 }
 
 .attribution a {
   color: #3e52a3;
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 360px;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.FirstSection,
+.SecondSection {
+  background-color: #1d2c67;
+  padding: 2rem 1.5rem;
+  margin: 0.5em 0em;
+  width: 100%;
+  border-radius: 1em 1em 1em 1em;
+}
+
+.FirstSection {
+  border-radius: 1em 6em 1em 1em;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.card {
+  margin-top: 2em;
+  border-radius: 0.4em;
+  padding: 0.6em;
+  background-color: #0c122c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SecondSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.SecondSection p {
+  color: #848794;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.SecondSection span {
+  color: white;
+}
+
+.SecondSection .bar {
+  width: 100%;
+  height: 1.5em;
+  border-radius: 5em;
+  background-color: #0c122c;
+}
+
+.SecondSection .remplissage {
+  width: 80%;
+  height: 1.5em;
+  border-radius: 5em;
+  border: 2px solid #0c122c;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.SecondSection .point {
+  margin-right: 0.2em;
+  width: 1em;
+  height: 1em;
+  border-radius: 5em;
+  background-color: white;
+}
+
+.SecondSection .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: .8em;
+}
+
+.FloatSection {
+  position: absolute;
+  background-color: white;
+  padding: 1em;
+  border-radius: .5em;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #848794;
+  top: 330px;
+}
+
+.FloatSection span {
+  color: #0c122c;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.FloatSection .five {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.FloatSection .one {
+  font-size: 1.7em;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 /*# sourceMappingURL=style.css.map */
