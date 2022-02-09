@@ -7,7 +7,6 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-
 }
 
 body {
@@ -28,8 +27,8 @@ main {
   flex-direction: column;
   width: 90%;
   max-width: 360px;
-  position: relative;
-  margin-bottom:3em;
+
+  margin-bottom: 3em;
 }
 
 .FirstSection,
@@ -57,10 +56,14 @@ main {
   align-items: center;
 }
 
+.triangle {
+  display:none;
+}
+
+
 .SecondSection {
   display: flex;
   justify-content: center;
-  //align-items: center;
   flex-direction: column;
   p {
     color: $PaleBlue;
@@ -73,12 +76,14 @@ main {
   }
   .bar {
     width: 100%;
+    position: relative;
+
     height: 1.5em;
     border-radius: 5em;
     background-color: $VeryDarkBlue;
   }
   .remplissage {
-    width: 80%;
+    width: 81.5%;
     height: 1.5em;
     border-radius: 5em;
     border: 2px solid $VeryDarkBlue;
@@ -98,35 +103,82 @@ main {
     border-radius: 5em;
     background-color: white;
   }
-  .size{
-      display: flex;
-      margin: 1em 0em;
-      justify-content:space-between;
-      color:white;
-      font-size:.8em;
+  .size {
+    display: flex;
+    margin: 1em 0em;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8em;
   }
 }
-.FloatSection{
-    position: absolute;
-    background-color: white;
-    padding:1em;
-    border-radius: .5em;
-    font-size:1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $GrayishBlue;
-    span{
-        color:$VeryDarkBlue;
-        font-weight: bold;
-        font-size: 2em;
-    }
-    .five{
-        transform: translateY(2px);
-    }
-    .one{
-        font-size:1.7em;
-        transform: translateY(1px);
-    }
-    top:330px;
+.FloatSection {
+  position: absolute;
+  align-self: center;
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 1em;
+      bottom: -442%;
+    right: 21%;
+    left: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $GrayishBlue;
+  span {
+    color: $VeryDarkBlue;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  .five {
+    transform: translateY(2px);
+  }
+  .one {
+    font-size: 1.7em;
+    transform: translateY(1px);
+  }
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-color: $VeryDarkBlue;
+    background-size: contain;
+    background-position: center bottom;
+  }
+  main {
+    max-width: 80%;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1em;
+  }
+  .FirstSection {
+    flex: 1;
+  }
+  .SecondSection {
+    flex: 2;
+    padding: 1.5em 2em;
+    p {
+      text-align: start;
+    }
+  }
+  .FloatSection {
+    bottom: 260%;
+    border-bottom-right-radius: 0;
+    left: 57%;
+    right: 0%;
+  }
+  .triangle {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+
+  border-bottom: 0;
+  border-top: 20px solid white;
+  bottom: 180%;
+  right: 0%;
+}
+}
+
